@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="1"
+    android:background="@color/colorbackground"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_120"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:elevation="@dimen/dimen_5"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="@dimen/dimen_5"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/layout_background1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120"
+            android:background="#ffffff"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_background4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_background"
+                android:layout_width="@dimen/dimen_110"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_18"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:gravity="start"
+                    android:text="08"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/dimen_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/year_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:text="Mar 2019"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/dimen_12"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/location_icon"
+                        android:layout_width="@dimen/dimen_12"
+                        android:layout_height="@dimen/dimen_12"
+                        android:background="@drawable/watch" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5"
+                        android:text="12:30pm"
+                        android:minLines="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#80000000"
+                        android:textSize="@dimen/dimen_10" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_background3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/clinic_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yesrin Clinic"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/dimen_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Check Chest pain"
+                    android:textColor="#80000000"
+                    android:textSize="@dimen/dimen_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dr_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_25"
+                    android:background="@drawable/btn_shape_gradient1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_35"
+                    android:layout_marginRight="@dimen/dimen_35"
+                    android:text="Dr.Niguyen"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dimen_14"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_background2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#ffffff"
+                android:gravity="end|center"
+                android:orientation="vertical">
+
+
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/file_delete"
+                        android:layout_width="@dimen/dimen_34"
+                        android:layout_height="@dimen/dimen_34"
+                        android:layout_marginRight="@dimen/dimen_12"
+                        android:src="@drawable/start"
+                        card_view:civ_border_width="@dimen/dimen_1"
+
+                        card_view:civ_border_color="@color/colorbackground"
+                        card_view:civ_shadow_color="@color/colorbackground"
+                        card_view:civ_shadow_radius="1" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

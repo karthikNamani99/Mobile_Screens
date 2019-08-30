@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">App_Screens</string>
+    <string name="history_declaration">Use the online image color picker right to select a color and get the html Color Code of this pixel.  Also you get the HEX value, RGB value and HSV value. You can put a picture url in the textbox below or upload your own image. (for example an screenshot of your desktop). Or use an website url, you will see a thumbnail on the right side.</string>
+</resources>
