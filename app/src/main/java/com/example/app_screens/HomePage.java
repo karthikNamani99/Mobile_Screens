@@ -40,21 +40,21 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
 
             case  R.id.next_page:
 
-                Intent next_page_intent=new Intent(getApplicationContext(),MainActivity.class);
+                Intent next_page_intent=new Intent(getApplicationContext(),Screen_Activity.class);
                 next_page_intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(next_page_intent);
 
             break;
             case  R.id.next_page1:
 
-                Intent next_page_intent1=new Intent(getApplicationContext(),MainActivity.class);
+                Intent next_page_intent1=new Intent(getApplicationContext(),Screen_Activity.class);
                 next_page_intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(next_page_intent1);
 
                 break;
             case  R.id.next_page2:
 
-                Intent next_page_intent2=new Intent(getApplicationContext(),MainActivity.class);
+                Intent next_page_intent2=new Intent(getApplicationContext(),Screen_Activity.class);
                 next_page_intent2.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(next_page_intent2);
 
